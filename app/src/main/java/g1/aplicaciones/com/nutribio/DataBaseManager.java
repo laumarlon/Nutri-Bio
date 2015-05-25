@@ -13,15 +13,15 @@ public class DataBaseManager {
 
     public static final String TABLE_CN="consejos";
     public static final String CN_ID="_id";
-    public static final String CN_NAME="título";
-    public static final String CN_CATEGORY="categoría";
-    public static final String CN_DESCRIPTION="descripción";
+    public static final String CN_NAME="titulo";
+    public static final String CN_CATEGORY="categoria";
+    public static final String CN_DESCRIPTION="descripcion";
 
     public static final String TABLE_PR="productos";
     public static final String PR_ID="_id";
-    public static final String PR_CODE="código";
+    public static final String PR_CODE="codigo";
     public static final String PR_NAME="nombre";
-    public static final String PR_CALORIES="calorías";
+    public static final String PR_CALORIES="calorias";
 
     public static final String TABLE_QR="recetas";
     public static final String QR_ID="_id";
