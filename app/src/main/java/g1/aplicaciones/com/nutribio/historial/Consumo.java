@@ -32,7 +32,7 @@ public class Consumo extends ActionBarActivity implements View.OnClickListener{
         setContentView(R.layout.activity_consumo);
         manager=new DataBaseManager(this);
         lista= (ListView) findViewById(R.id.ListViewDos);
-        manager.insertarConsejo("Mejora tu energia","DEPORTE","Trotar una hora al dia");
+        manager.insertarConsejo("Mejora tu energía","DEPORTE","Trotar una hora al día");
         String[]from=new String[]{manager.CN_NAME,manager.CN_DESCRIPTION};
         int[] to=new int[]{android.R.id.text1,android.R.id.text2};
         cursor=manager.cargarCursorConsejos();
