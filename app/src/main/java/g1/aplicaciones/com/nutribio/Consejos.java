@@ -30,7 +30,7 @@ public class Consejos extends ActionBarActivity implements View.OnClickListener{
         consejo= (EditText) findViewById(R.id.ETbuscarconsejo);
         buscar= (Button) findViewById(R.id.BTbuscarconsejo);
         buscar.setOnClickListener(this);
-        manager.insertarConsejo("Mejora tu energía","DEPORTE","Trotar una hora al día");
+        manager.insertarConsejo("Mejora tu energia","DEPORTE","Trotar una hora al dia");
         String[]from=new String[]{manager.CN_NAME,manager.CN_DESCRIPTION};
         int[] to=new int[]{android.R.id.text1,android.R.id.text2};
         cursor=manager.cargarCursorConsejos();
