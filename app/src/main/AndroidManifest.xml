@@ -5,10 +5,12 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:logo="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Logo"
+            android:logo="@mipmap/ic_launcher"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +21,7 @@
 
         <activity
             android:name=".Menu"
+            android:logo="@mipmap/ic_launcher"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name" >
             <intent-filter>
@@ -29,6 +32,7 @@
 
         <activity
             android:name=".Consejos"
+            android:logo="@mipmap/ic_launcher"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name" >
             <intent-filter>
@@ -39,6 +43,7 @@
 
         <activity
             android:name=".Informacion"
+            android:logo="@mipmap/ic_launcher"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name" >
             <intent-filter>
@@ -49,6 +54,7 @@
 
         <activity
             android:name=".crear.Crear"
+            android:logo="@mipmap/ic_launcher"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name" >
             <intent-filter>
@@ -59,6 +65,7 @@
 
         <activity
             android:name=".historial.Consumo"
+            android:logo="@mipmap/ic_launcher"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name" >
             <intent-filter>
@@ -69,6 +76,7 @@
 
         <activity
             android:name=".historial.Peso"
+            android:logo="@mipmap/ic_launcher"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name" >
             <intent-filter>
@@ -79,6 +87,7 @@
 
         <activity
             android:name=".historial.Productos"
+            android:logo="@mipmap/ic_launcher"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name" >
             <intent-filter>

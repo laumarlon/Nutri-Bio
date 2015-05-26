@@ -1,5 +1,6 @@
 package g1.aplicaciones.com.nutribio.historial;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -32,36 +33,46 @@ public class Peso extends ActionBarActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-    if(view.getId()==R.id.BTbuscarconsejo){
+    if(view.getId()==R.id.BTindice){
     int pes= Integer.parseInt(peso.getText().toString());
-    int alt= Integer.parseInt(altura.getText().toString());
+    int a= Integer.parseInt(altura.getText().toString());
+    double alt=a*0.01;
     double bmi=pes/(alt*alt);
     if(bmi<16){
-    punto.setText("Deficiencia nutricional en 3er grado");
+    punto.setText(Math.round(bmi)+": Deficiencia nutricional en 3er grado");
+    punto.setTextColor(Color.RED);
     }
     else if(bmi<17){
-    punto.setText("Deficiencia nutricional en 2do grado");
+    punto.setText(Math.round(bmi)+": Deficiencia nutricional en 2do grado");
+    punto.setTextColor(Color.RED);
     }
     else if(bmi<18.5){
-    punto.setText("Deficiencia nutricional en 1er grado");
+    punto.setText(Math.round(bmi)+": Deficiencia nutricional en 1er grado");
+    punto.setTextColor(Color.RED);
     }
     else if(bmi<20){
-    punto.setText("Bajo peso");
+    punto.setText(Math.round(bmi)+": Bajo peso");
+    punto.setTextColor(Color.RED);
     }
     else if(bmi<25){
-    punto.setText("Normal");
+    punto.setText(Math.round(bmi)+": Normal");
+    punto.setTextColor(Color.GREEN);
     }
     else if(bmi<30){
-    punto.setText("Sobrepeso");
+    punto.setText(Math.round(bmi)+": Sobrepeso");
+    punto.setTextColor(Color.RED);
     }
     else if(bmi<35){
-    punto.setText("Obesidad en 1er grado");
+    punto.setText(Math.round(bmi)+": Obesidad en 1er grado");
+    punto.setTextColor(Color.RED);
     }
     else if(bmi<40){
-    punto.setText("Obesidad en 2do grado");
+    punto.setText(Math.round(bmi)+": Obesidad en 2do grado");
+    punto.setTextColor(Color.RED);
     }
     else{
-    punto.setText("Obesidad en 3er grado");
+    punto.setText(Math.round(bmi)+": Obesidad en 3er grado");
+    punto.setTextColor(Color.RED);
     }
     }
     }

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Nutri-Bio.iml" filepath="$PROJECT_DIR$/Nutri-Bio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nutri-Bio-master.iml" filepath="$PROJECT_DIR$/Nutri-Bio-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
